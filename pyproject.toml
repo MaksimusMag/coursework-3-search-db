@@ -1,0 +1,26 @@
+[project]
+name = "coursework-3-search-db"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Maksim Obroskov",email = "CAPITANRB-107@yandex.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "requests (>=2.34.2,<3.0.0)",
+    "psycopg2-binary (>=2.9.13,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.5.0"
+black = "^26.10.1"
+isort = "^9.0.2"
+pytest = "^9.2.0"
+pytest-cov = "^7.1.0"
+
